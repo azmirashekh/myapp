@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/body.dart';
 
 void main() {
   runApp(const Lab06AdvancedUI());
@@ -48,22 +49,8 @@ class Lab06AdvancedUI extends StatelessWidget {
           ),
         ),
         appBar: AppBar(title: Text("Lab O6 Advanced UI")),
-        body: Center(
-          child: Text(
-            "Working with Navigation",
-            style: TextStyle(fontSize: 60),
-          ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: "Settings",
-            ),
-          ],
-        ),
+        body: AppbodyState()
+        
       ),
     );
   }
