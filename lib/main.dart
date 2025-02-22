@@ -48,26 +48,10 @@ class Lab06AdvancedUI extends StatelessWidget {
           ),
         ),
         appBar: AppBar(title: Text("Lab O6 Advanced UI")),
-        body: SingleChildScrollView(
-          // Wrap the body to avoid overflow
-          child: Center(
-            child: Column(
-              children: [
-                CachedNetworkImage(
-                  imageUrl:
-                      "https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg",
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget:
-                      (context, url, error) => Image.network(
-                        'https://media.istockphoto.com/id/183412466/photo/eastern-bluebirds-male-and-female.jpg?s=612x612&w=0&k=20&c=6_EQHnGedwdjM9QTUF2c1ce7cC3XtlxvMPpU5HAouhc=',
-                      ),
-                ),
-                SizedBox(height: 20), // Added space between images
-                Image.network(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYyUSpU3kL279ei16K3JgL7h86WKKWHXcJIA&s',
-                ),
-              ],
-            ),
+        body: Center(
+          child: Text(
+            "Working with Navigation",
+            style: TextStyle(fontSize: 60),
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
